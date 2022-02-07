@@ -1,45 +1,57 @@
 {
-    "basic_det": [
+  "Basic Details": {
+    "Name": "Kristine Agcay Chan",
+    "Age": "18 years old",
+    "Weight": "51 kg",
+    "Height": "173 cm",
+    "Address": "Paju, Gyeonggi Province, South Korea"
+  },
+  "Contact Details": {
+    "Cellphone No.": "+63 939-269-5513",
+    "E-mail": "kimdami123@gmail.com"
+  },
+  "Objectives": [
     {
-        "name" : "Kim Da-mi",
-        "age" : "27",
-        "weight" : "51 kg",
-        "height" : "170 cm",
-        "address" : "Paju, Gyeonggi Province, South Korea",
-    },
-    "contact details" : {
-        "cellphone no." : "+63 939-269-5513",
-        "email" : "kimdami123@gmail.com"
-    },
-    "objectives" : [{
-        "job objectives" : "Entertain, convey characters and express emotions in front of a live audience."
-    }],
-    "education attainment" : {
-        "tertiary" : {
-            "name" : "Seoul National University",
-            "address" : "Bldg.504, Department of Life Sciences, Seoul National University, 1 Gwanak-ro, South Korea, Seoul, Gwanak-gu"
-        },
-        "secondary" : {
-            "name" : "Korea International School Pangyo Campus",
-            "address" : "#27 385, Daewangpangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea"
-        },
-        "primary" : {
-            "name" : "Asia PAcific International School Seoul",
-            "address" : "57 Wolgye-ro 45ga-gil, Nowon-gu, Seoul, South Korea"
-        }
-    },
-    "work experience" : {
-        "position" : "actress",
-        "company" : "TvN",
-        "address" : "CJ E&M Center, 66 Sangamsan-ro, Sangam-dong, Mapo-gu, Seoul, South Korea"
-    },
-    "skills" : {
-        "1" : "Ability to work as a team and also individually.",
-        "2" : "Experience in improvisation/ad-libbing.",
-        "3" : "Ability to take direction."
-       
+      "Job Objectives": "Entertain, convey characters and express emotions in front of a live audience."
     }
-    
-    json.file= json.dumps(resume, indent=2)
-with open("myresume.json", "w") as resume: 
-    resume.write(json_file)
+  ],
+  "Educational Attainment": {
+    "Tertiary Level": {
+      "School Name": "Seoul National University",
+      "School Address": "Bldg.504, Department of Life Sciences, Seoul National University, 1 Gwanak-ro, South Korea, Seoul, Gwanak-gu"
+    },
+    "secondary": {
+      "School Name": "Korea International School Pangyo Campus",
+      "School Address": "#27 385, Daewangpangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea"
+    },
+    "Primary": {
+      "School Name": "Asia Pacific International School Seoul",
+      "School Address": "57 Wolgye-ro 45ga-gil, Nowon-gu, Seoul, South Korea"
+    }
+  },
+  "Educational Achievements": {
+    "Primary Level Achievements": {
+      "1": "Valedictorian",
+      "2": "Journalsit of the Year ",
+      "3": "Athlete of the Year",
+      "4": "1st Place in News Writing in Division School Press Conference",
+      "5": "Leadership Awardee"
+    },
+    "Secondary Level Achievements": {
+      "1": "With High Honors",
+      "2": "Athlete of the Year",
+      "3": "Leadership Awardee",
+      "4": "Academic Exellence Awardee"
+    },
+    "Work experience": {
+      "position": "Actress",
+      "company": "TVN",
+      "address": "CJ E&M Center, 66 Sangamsan-ro, Sangam-dong, Mapo-gu, Seoul, South Korea"
+    },
+    "Skills": {
+      "1": "Ability to work as a team and also individually.",
+      "2": "Experience in improvisation/ad-libbing.",
+      "3": "Ability to take direction."
+    }
+  }
+}
