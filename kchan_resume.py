@@ -1,40 +1,39 @@
 import os as access
+from ctypes import alignment
+import json
 from fpdf import FPDF
 
+#PDF Format
+pdf = FPDF('P', 'mm', 'Letter') 
+pdf.add_page()
 
- # Important Values
-User = 'KRISTINE AGCAY CHAN' 
-file_name = 'CHAN_Kristine.pdf' 
-char = 'Personal Details'
-json_file = "resume.json" 
 
+#Read Informations
+res_info= open('resume.json', 'r')
+res_maker= res_info.read()
+raw_infos= json.loads(res_maker)
+#images
 class PDF(FPDF):
-# setting the header
     def header(self): 
-        self.image('header.png', 170, 0, 40, 0) 
-        self.image('me.png', 10, 0, 50, 0) 
-        self.set_font('helvetica', 'B', 25) 
-        self.cell(180, 35, User, ln = 1, align = 'R'); 
-        self.cell(90, 20, char) 
-        self.ln(10)
+        self.image('me.png', 10, 8, 40) 
+        self.set_font('helvetica', 'B', 28.5) 
+        self.cell(0, 30,ln = 1, align = 'R'); 
+        self.ln(3)
 
-# setting the data
-    def json_body(self, name):
-        with open(json_file) as fh: 
-            chr = fh.read() 
-        self.set_font("helvetica", "", 11)
-        self.multi_cell(0, 4, chr)
+#Informations
+for user_info in raw_infos:
+    pdf.set_font('helvetica', 'B', 20)
+    pdf.cell(0,30, f"{user_info['firstname']} {user_info['middlename']} {user_info['lastname']}", align= "R", ln=1)
+    pdf.set_font('helvetica', 'BI', 18)
+    pdf.cell(5,1,"Personal Info", ln=1)
+    pdf.set_font('helvetica', "", 12)
+    pdf.cell(0,5, f"Name: {user_info['name']}",align="L", ln=1)
+    pdf.cell(0,5, f"Email Address: {user_info['emailadd']}",align="L",ln=1)
+    pdf.cell(0,5, f"Address: {user_info['address']}",align="L",ln=1)
+    pdf.cell(0,5, f"Contact Number: {user_info['contactnumber']}", align="L", ln=1)
+    
 
-# setting the page 
-    def print_chap(self, num, title, name): 
-        self.add_page()
-        self.json_body(name)
+#PDF Maker
+pdf.output('CHAN_Kristine.pdf')
 
-
-# PDF maker
-Kchanpdf = PDF('P', 'mm', 'A4') 
-Kchanpdf.set_auto_page_break(margin = 0.5, auto = True) 
-Kchanpdf.print_chap(1, "", json_file)
-Kchanpdf.output(file_name)
-# Open the file 
-access.startfile(file_name)
+access.startfile('CHAN_Kristine.pdf')
