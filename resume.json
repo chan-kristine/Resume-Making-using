@@ -1,57 +1,29 @@
-{
-  "Basic Details": {
-    "Name": "KRISTINE AGCAY CHAN",
-    "Age": "18 years old",
-    "Weight": "51 kg",
-    "Height": "173 cm",
-    "Address": "Paju, Gyeonggi Province, South Korea"
-  },
-  "Contact Details": {
-    "Cellphone No.": "+63 939-269-5513",
-    "E-mail": "kimdami123@gmail.com"
-  },
-  "Objectives": [
-    {
-      "Job Objectives": "Entertain, convey characters and express emotions in front of a live audience."
-    }
-  ],
-  "Educational Attainment": {
-    "Tertiary Level": {
-      "School Name": "Seoul National University",
-      "School Address": "Bldg.504, Department of Life Sciences, Seoul National University, 1 Gwanak-ro, South Korea, Seoul, Gwanak-gu"
-    },
-    "secondary": {
-      "School Name": "Korea International School Pangyo Campus",
-      "School Address": "#27 385, Daewangpangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea"
-    },
-    "Primary": {
-      "School Name": "Asia Pacific International School Seoul",
-      "School Address": "57 Wolgye-ro 45ga-gil, Nowon-gu, Seoul, South Korea"
-    }
-  },
-  "Educational Achievements": {
-    "Primary Level Achievements": {
-      "1": "Valedictorian",
-      "2": "Journalsit of the Year ",
-      "3": "Athlete of the Year",
-      "4": "1st Place in News Writing in Division School Press Conference",
-      "5": "Leadership Awardee"
-    },
-    "Secondary Level Achievements": {
-      "1": "With High Honors",
-      "2": "Athlete of the Year",
-      "3": "Leadership Awardee",
-      "4": "Academic Exellence Awardee"
-    },
-    "Work experience": {
-      "Position": "Actress",
-      "Company": "TVN",
-      "Cddress": "CJ E&M Center, 66 Sangamsan-ro, Sangam-dong, Mapo-gu, Seoul, South Korea"
-    },
-    "Skills": {
-      "1": "Ability to work as a team and also individually.",
-      "2": "Experience in improvisation/ad-libbing.",
-      "3": "Ability to take direction."
-    }
+[
+  {
+      "title1": "Personal Information",
+      "name": "Kristine A. Chan",
+      "address": "Paju, Gyeonggi Province, South Korea",
+      "emailadd": "kimdami123@gmail.com",
+      "contactnumber": "+63 939-269-5513",
+      "title2": "Objectives",
+      "objectives": "Entertain, convey characters and express emotions in front of a live audience",
+      "title3": "Educational Attainment",
+      "tertiarylvl" : "Seoul National University",
+      "tschooladd" : "South Korea, Seoul, Gwanak-gu",
+      "secondlvl": "Korea International School Pangyo Campus",
+      "sschooladd": "Gyeonggi-do, South Korea",
+      "primlvl": "Asia Pacific International School Seoul",
+      "pschooladd": "57 Wolgye-ro 45ga-gil, Nowon-gu, Seoul, South Korea",
+      "title4": "Skills",
+      "Skll1": "Ability to work as a team and also individually.",
+      "Skll2": "Experience in improvisation/ad-libbing.", 
+      "Skll3": "Ability to take direction.",
+      "title5": "Achievements",
+      "achieve1":"Journalist of the Year 2015-2020",
+      "achieve2": "Athlete of the Year 2015-2020",
+      "achieve3": "Accademic Exellenece Awardee 2020",
+      "achieve4": "Leadership Awardee 2015-2020", 
+      "achieve5": "News Writing Champion in National School Press Conference",
+      "achieve6":"Magna Cum Laude in the year 2022"
   }
-}
+]
